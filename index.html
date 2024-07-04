@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body class="bg-[url(/images/images.jpeg)] bg-no-repeat h-screen bg-cover text-white">
+<header class="bg-[#FFFFFF30]">
+    <nav class="flex items-center justify-between px-12 h-16 gap-8">
+        <a href="#" class="text-1xl font-bold border-2 px-2 py-2">Manage</a>
+
+        <div class="dropdown-menu absolute -top-full left-0 max-lg:bg-[#FFFFFF30] w-full flex flex-col gap-6 items-center py-2 text-lg font-bold lg:static lg:flex-row lg:justify-between">
+            <ul class="flex flex-col items-center gap-6 lg:flex-row lg:gap-8">
+                <li class="hover:text-orange-500">Home</li>
+                <li class="hover:text-orange-500">Option1</li>
+                <li class="hover:text-orange-500">Option2</li>
+                <li class="hover:text-orange-500">Option3</li>
+                <li class="hover:text-orange-500">Property</li>
+                <li class="hover:text-orange-500">Property</li>
+            </ul>
+            <div class="flex flex-col items-center gap-6 lg:flex-row lg:gap-8">
+                <button>Login</button>
+                <button class="bg-orange-500 rounded-lg px-2 py-1">Sign up</button>
+
+            </div>
+
+
+
+        </div>
+        <div class="toggle-button lg:hidden">
+            <button onClick="sidebar()">
+                <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+
+            </button>
+            
+
+        </div>
+
+
+
+
+
+
+    </nav>
+
+</header>
+<script >
+    const toggleBtn = document.querySelector(".toggle-button");
+    const dropdown = document.querySelector(".dropdown-menu");
+
+    toggleBtn.addEventListener("click", ()=>  {
+        dropdown.classList.toggle("top-16");
+
+    })
+
+    
+    
+
+    
+
+  
+  </script>
+
+  
+    
+  
+</body>
+</html>
